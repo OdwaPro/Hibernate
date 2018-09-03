@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "course.Course" table = "course">
+      
+      <meta attribute = "class-description">
+         This class contains the Course detail. 
+      </meta>
+      
+      <id name = "courseId" type = "int" column = "courseId">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "CourseName" column = "course_name" type = "string"/>
+      <property name = "Instructor" column = "instructor" type = "string"/>
+      <property name = "salary" column = "salary" type = "int"/>
+      
+      
+   </class>
+</hibernate-mapping>
